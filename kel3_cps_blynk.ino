@@ -9,29 +9,29 @@
 #include <WebServer.h>
 #include <BlynkSimpleEsp32.h>
 
-// WiFi Credentials
+
 const char* ssid = "PesbalGirl";
 const char* password = "sisfotelco";
 
-// Web Server
+
 WebServer server(80);
 
-// Define I2C pins for ESP32
+
 #define SDA_PIN 21
 #define SCL_PIN 22
 
-// Sensor Pins
+
 #define MQ2_ANALOG_PIN 34
 #define FLAME_SENSOR_PIN 19
 
-// Buzzer and LED Pins
+
 #define BUZZER_PIN 13
 #define LED_PIN 12
 
-// Threshold for Gas Detection
+
 #define GAS_THRESHOLD 1200
 
-// LCD
+
 LiquidCrystal_PCF8574 lcd(0x27);
 
 void setup() {
